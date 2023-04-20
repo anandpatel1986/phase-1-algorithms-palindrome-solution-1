@@ -1,7 +1,11 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const reversedWord = reverse(word)
+  return word === reversedWord
 }
 
+function reverse(word){
+  return word.split("").reverse().join("")
+}
 /* 
   Add your pseudocode here
 */
